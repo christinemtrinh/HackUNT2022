@@ -1,6 +1,8 @@
 body{
+    margin-top: 10%;
     text-align : center;
     color : #553865;
+    background-color: #1f233a;
 }
 .startButton{
     margin-left: 50%;
@@ -8,9 +10,17 @@ body{
     background: blue;
     float: right;
 }
-.charCust{
-    
-}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+  }
 .scenes{
    width: 100%;
    height: 100%;

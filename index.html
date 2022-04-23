@@ -8,23 +8,25 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function startButton(){
-
+            //import drawing to another page
+            window.location.href="/game.html";
         }
     </script>
 </head>
 <body>
-    <h1 margin-top=500px; text-align="center">Inhabiting Space</h1>
-          
-    <div class="container" style="display:flex; height: 100px;">  
-        <div style="width:50%;background:green;" >
-            <h1>drawing goes here</h1>
+    <h1 margin-top=500px; text-align="center">Inhabiting Space</h1>   
+    <div class="container" style="display:flex;">  
+        <div style="width:50%;" >
+            <img src=man.png alt="character" width= 50%; padding=30%>
         </div>
-        <div style="flex-grow:1;background:blue;">
-            <button onclick="startButton()">Start</button>
+        <div class="button;background: #2f2f2f" >
+            <a href="game.html" class="button">Start</a>
+            <p></p> 
             <div>
-                <button onclick="settings()">Settings</button>
+                <a href="#" class="button">Settings</a>
             </div>
         </div>
-    </div>      
+    </div>    
+  
 </body>
 </html>
