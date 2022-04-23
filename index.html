@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function startButton(){
-
+            //import drawing to another page
+            window.location.href="/game.html";
         }
     </script>
 </head>
@@ -17,15 +18,18 @@
     <h1>Inhabiting <br> Space</h1>
     </div>
 
-    <div class="container" style="background-color:#BEBEBE;"> 
-        <h1 class = "subtitle">Select your character!</h1>
+    <div class="container" style="display:flex">  
+        <h1 class=subtitle>Select your character!</h1>
     </div>
-    <div class="container" style="flex-grow:1;background:blue;">
-            <button onclick="startButton()">Start</button>
+
+    <div class="button" style=background:#2f2f2f >
+            <a href="game.html" class="button">Start</a>
+            <p></p> 
             <div>
-                <button onclick="settings()">Settings</button>
+                <a href="#" class="button">Settings</a>
             </div>
         </div>
-    </div>      
+    </div>    
+  
 </body>
 </html>
