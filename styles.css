@@ -16,19 +16,19 @@ body{
     margin-left : 15px; 
     text-align : left; 
     font-family : monospace; 
-    font-size : 20px; 
+    font-size : 22px; 
     color: #553865;
 }
 
 .container {
     display: flex;
     flex-flow: row wrap; 
-    height: 00px;
+    height: 400px;
     margin-left: 20px;
     margin-bottom: 20px;
     width: 45%; 
     float: left;
-    border-radius: 15px;
+    border-radius: 12px;
     background-color:#808080
 
 }
@@ -44,6 +44,10 @@ body{
     border-radius: 2px;
     display: flex;
     flex-flow: row wrap;
+    width: 100px;
+    font-family: monospace;
+    margin-bottom: 22px;
+
   }
 
 .textbox{
@@ -67,4 +71,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width:50%;
+    margin-left: 80px;
+
+
 }
