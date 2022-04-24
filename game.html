@@ -7,13 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<script>
-    
-</script>
 <body>
+    <script>
+        window.onload = goToNextScene;
+
+        let index = 0;
+        // disaster 4 real
+        const SCENES = [
+            ["scientist.jpg", "Since the 1800s studies have warned that human-generated carbon dioxide and similar gasses could accumulate in the atmosphere and cause a greenhouse effect. By the 1960s, global warming theory was confirmed. Science suggests that to counter the impacts of global warming, we had to achieve a net-zero carbon emissions by 2050. The year is 2076; not enough heed was given and now the situation has become dire."],
+            ["death-farm.jpg", "Crops and clean water have become scarce."],
+            ["submergedcities.jpg", "Low-lying islands and coastal cities have submerged under rising sea levels."],
+            ["sickppl.jpg", "Tropical and insect-borne diseases have become a constant issue as pests expanded their ecosystems since they can survive in places previously too cold."],
+            ["disasterfr.jpg", "Natural disasters such as floods, wildfires, droughts, hurricanes, and heat waves have become commonplace and intense."],
+            ["deadfish.jpg", "Ocean acidification and destruction of coral reefs have severely decreased the fish and shellfish populations and diversity."]
+        ]
+        function goToNextScene() {
+            if (index == SCENES.length) {
+                window.location.assign('./space.html');
+            }
+            document.getElementById("sceneimg").src = SCENES[index][0];
+            document.getElementById("scenedescription").innerText = SCENES[index][1];
+            ++index;
+        }
+        
+    </script>
     <div>
-        <div style="height:70%; margin: 5%;width:90%; border:1px; border-color: red;background-color: red">
-            <img src=getsource() alt="example">
+        <div style="height:65vh; margin:1%;width:90%">
+            <img id="sceneimg" alt="example">
+        </div>
+        <div style="height: 20vh; margin: 5%;width:90%; border:1px; border-color: rgb(255, 255, 255);background-color: rgb(255, 255, 255)">
+            <p id="scenedescription"></p>
+            <button onclick="goToNextScene()" class="next round">&#8250;</a>
+        </div>
+        <div>
+            
         </div>
     </div>
 </body>
