@@ -137,3 +137,12 @@ a{
     z-index:0;
 
   }
+
+  #needcoffee {
+    display: flex;
+    align-items: center;
+  }
+
+  #endingimg {
+      
+  }
