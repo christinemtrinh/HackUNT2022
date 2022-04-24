@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function startButton(){
-            elem.requestfullscreen();
             //import drawing to another page
             window.location.href="/game.html";
         }
@@ -22,17 +21,23 @@
         <div>
         <h1 class=subtitle>Select your character!</h1>
         </div> 
-        <select name="players" id="players">
-            <option value="mom">Mom</option>
-            <option value="dad">Dad</option>
-            <option value="girl">Daughter</option>
-            <option value="boy">Son</option>
-        </select>     <p><br> </p> 
-        <div style="display:flex; flex-direction:row;">        
-            <img src="vector dad.jpg" id="characterimg">
-            <img src="vector mom.jpg" id="characterimg">
-            <img src="vector daughter.jpg" id="characterimg">
-            <img src="vector son.jpg" id="characterimg">
+            <select name="players" id="players">
+                <option value="mom">Jacqui</option>
+                <option value="dad">Steve</option>
+                <option value="girl">Mesmra</option>
+                <option value="boy">Cletus</option>
+            </select>     <p><br> </p> 
+            <div style="display:flex; flex-direction:row;">       
+                <img src="vector dad.jpg" id="characterimg">
+                <p class="statbox"> Jim <br> <br> Strength: 9/12 <br>
+                Intelligence: 6/12 <br> Speed: 5/12 <br> Luck: 6/12 <br> <br>
+                Father. </p>
+                <img src="vector mom.jpg" id="characterimg">
+                <p class="statbox" style="left:600px; top: 350px"> Jim <br> <br> Strength: 9/12 <br>
+                    Intelligence: 6/12 <br> Speed: 5/12 <br> Luck: 6/12 <br> <br>
+                    Father. </p>
+                <img src="vector daughter.jpg" id="characterimg">
+                <img src="vector son.jpg" id="characterimg">
             </div>
         </div>
 

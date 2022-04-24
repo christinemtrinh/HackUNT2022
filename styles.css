@@ -1,7 +1,7 @@
 body{
     margin: 5%;
     text-align : center;
-    color : #ED9121;
+    color: #553865;
     background-image: url("galaxy.jpg");
 }
 
@@ -11,6 +11,7 @@ select {
     color: #553865;
 }
 .title {
+    color : #ED9121;
     margin-top : 90px; 
     text-align : "center"; 
     font-family : 'Monaco', Courier, monospace; 
@@ -108,10 +109,6 @@ a{
     transition:opacity 0.5s ease;
 }
 
-.text-under-img {
-    text-align: justify;
-    width: 22%; 
-}
 #characterimg {
     opacity: 1;
     width: 22%;
@@ -121,8 +118,22 @@ a{
     display:block;
     flex-direction: row;
     flex-wrap: wrap;
-
+    z-index: 1;
 }
-#characterimg:hover {
+#characterimg:hover{
     opacity: 0;
 }
+
+.statbox{
+    width:10%;
+    height: 20%;
+    position: fixed;
+    border: 1px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float:left;
+    z-index:0;
+
+  }
